@@ -1,0 +1,4 @@
+select echange.idEchange, p1.idProduit, p1.idUser, p2.idProduit, p2.idUser,echange.etat, echange.jour from echange
+    join produit p1 on echange.idP1 = p1.idProduit
+    join produit p2 on echange.idP2 = p2.idProduit
+    where echange.etat = 1 and p1.idUser = 2 ; 
